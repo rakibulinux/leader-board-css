@@ -1,11 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    
+
 }
 
+/* Commen style and Utilites */
+
 body{
-    background-color: #E5E5E5;
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -18,7 +21,7 @@ header{
 h1{
     color: white;
 }
-nav ul li a{
+nav a{
     text-decoration: none;
     color: white;
 }
@@ -32,31 +35,103 @@ nav ul li{
     display: flex;
     justify-content: flex-end;
 }
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    height: 679px;
+    padding: 30px;
+    border-radius: 5px;
+}
 
-.top-playes .players .player img{
+.top-playes{
+    margin-bottom: 30px;
+}
+.section-titel{
+    color: #562EFF;
+    font-size: 24px;
+    padding-bottom: 20px;
+    margin-top: 3px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+
+
+.player{
+    display: flex;
+    align-items: center;
+}
+
+.player img{
     width: 56px;
     height: 56px;
 }
-.top-playes .players{
+
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+    color: #000000;
+}
+
+hr{
+    width: 807px;
+    height: 0;
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+.post img{
+    width: 177px;
+    height: 117px;
+    margin-right: 20px;
+}
+
+.posts{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
 }
 
-.players .player{
+.post{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.top-playes .players .player h3{
-    display: inline;
-    align-items: center;
+.post a {
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 18px;
 }
 
+.post span{
+    color: #9F9F9F;
+    font-size: 18px;
+}
 
-main section .top-playes{
+.container-2{
+    background-color: #FFFFFF;
     width: 870px;
-    height: 679px;
+    height: 362px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.article-sec img{
+    width: 224px;
+    height: 104px;
+}
+
+.latest-course{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
