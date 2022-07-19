@@ -126,12 +126,67 @@ hr{
     border-radius: 5px;
 }
 
-.article-sec img{
+.course-banner img{
     width: 224px;
     height: 104px;
 }
 
-.latest-course{
+/* .latest-course{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+} */
+
+.fa-star{
+    font-size: 12px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.eampty{
+    color: #AEAEAE;
+
+}
+
+.course{
+    width: 252px;
+    height: 270px;
+    /* border: 2px solid darkblue; */
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+
+}
+
+.course-duration{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    Width: 94.83px;
+    Height: 29.38px;
+    color: #FF4A60;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* border-radius: 5px; */
+    grid-column-gap: 24px;
+}
+
+.course-titel a {
+    text-decoration: none;
+    color: #ED6B4F;
 }
